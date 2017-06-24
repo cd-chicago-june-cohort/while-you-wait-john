@@ -1,5 +1,4 @@
 function countdown(days) {
-    
     for(var i = days; i > 0; i--) {
         var msg1 = "days until my birthday.";
         var msg2 = "";
@@ -8,9 +7,10 @@ function countdown(days) {
         } else if (i > 5) {
             msg2 = "Getting closer!";
         } else {
-            msg1 = msg1.toUpperCase();
+            msg1 = (msg1.toUpperCase()).slice(0, 22) + "!!!";
         };
-        console.log(i, msg1, msg2)
+        i = i.toString();
+        console.log(i, msg1, msg2);
     }
     console.log("HAPPY BIRTHDAY!!!!!!");
 }
